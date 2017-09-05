@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="WhiteSturgeon">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+    <title>White Sturegon</title>
+
+    <link type="text/css" href="/src/Content/glyphicons/web/html_css/css/glyphicons.css" rel="stylesheet" />
+    <link type="text/css" href="/dist/base.css" rel="stylesheet">
+
+
+    <script src="/src/Config/Settings.js"></script>
+    <script src="/dist/bundle.js"></script>
+</head>
+<body>
+    <div id="main">
+        <section class="header header-wings">
+            <a href="/">
+                <img id="logo" src="../../src/Content/Images/mainlogo.fw.png"/>
+            </a>
+        </section>
+        <section class="header" id="header-middle">
+            <h1 class="center text-light">
+                Welcome to the White Sturgeon Web Application!
+            </h1>
+        </section>
+        <section class="header header-wings">
+            <ws-user-logon-control></ws-user-logon-control>
+        </section>
+        
+        <div id="scrollable">
+            <section id="side-bar">
+                <ws-sidebar-control></ws-sidebar-control>
+            </section>
+
+            <section id="content" ng-view>
+
+            </section>
+        </div>
+    </div>
+</body>
+</html>
